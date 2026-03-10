@@ -1,4 +1,4 @@
-# harkn
+# hearkn
 
 Push notifications for AI coding agents via [ntfy.sh](https://ntfy.sh). Know when your agent needs you — from your phone, another monitor, or across the room.
 
@@ -22,7 +22,7 @@ Notifications show the project folder and SSH hostname (e.g., `my-project [SSH: 
 **Prerequisites:** Node.js 18+, an AI coding agent with hook support (e.g., Claude Code).
 
 ```bash
-npx harkn
+npx hearkn
 ```
 
 The interactive installer will:
@@ -40,13 +40,13 @@ Notifications are automatic after install. No changes to your workflow.
 
 ```bash
 # Send a test notification
-npx harkn test
+npx hearkn test
 
 # Check installation status
-npx harkn status
+npx hearkn status
 
 # Remove hooks and config
-npx harkn uninstall
+npx hearkn uninstall
 ```
 
 ## How it works
@@ -107,8 +107,8 @@ Tapping a notification opens a `vscode://vscode-remote/ssh-remote+host/path` URL
 ## Development
 
 ```bash
-git clone https://github.com/loganrooks/harkn.git
-cd harkn
+git clone https://github.com/loganrooks/hearkn.git
+cd hearkn
 
 # Run unit tests (62 tests)
 npm test

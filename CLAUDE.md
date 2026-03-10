@@ -1,4 +1,4 @@
-# harkn
+# hearkn
 
 Push notifications for AI coding agents via ntfy.sh with click-to-focus VS Code window support.
 
@@ -6,7 +6,7 @@ Push notifications for AI coding agents via ntfy.sh with click-to-focus VS Code 
 
 | File | Purpose |
 |------|---------|
-| `bin/cli.js` | CLI entry point — `npx harkn [test\|status\|uninstall]` |
+| `bin/cli.js` | CLI entry point — `npx hearkn [test\|status\|uninstall]` |
 | `lib/hook.js` | The hook — reads stdin JSON, sends ntfy, focuses VS Code window |
 | `lib/install.js` | Interactive installer — prompts, patches settings.json, sends test |
 | `test/*.test.js` | TDD suite — unit (62), integration (9), E2E (9) |

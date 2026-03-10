@@ -12,12 +12,12 @@ const command = process.argv[2] || '';
 async function test() {
   const configPath = path.join(os.homedir(), '.claude-notify.conf');
   if (!fs.existsSync(configPath)) {
-    console.log('\n  Not installed yet. Run: npx harkn\n');
+    console.log('\n  Not installed yet. Run: npx hearkn\n');
     process.exit(1);
   }
   const config = JSON.parse(fs.readFileSync(configPath, 'utf8'));
   if (!config.ntfy_topic) {
-    console.log('\n  No ntfy topic configured. Run: npx harkn\n');
+    console.log('\n  No ntfy topic configured. Run: npx hearkn\n');
     process.exit(1);
   }
 
@@ -29,7 +29,7 @@ async function test() {
   const payload = {
     topic: config.ntfy_topic,
     title: `test [SSH: ${host}]`,
-    message: 'Test notification from harkn',
+    message: 'Test notification from hearkn',
     priority: 3,
     tags: ['robot'],
   };
@@ -65,14 +65,14 @@ async function test() {
 
 function help() {
   console.log(`
-  harkn — Push notifications for AI coding agents
+  hearkn — Push notifications for AI coding agents
 
   Usage:
-    npx harkn          Install or update
-    npx harkn test     Send a test notification
-    npx harkn status   Show current configuration
-    npx harkn uninstall Remove hooks and config
-    npx harkn help     Show this message
+    npx hearkn          Install or update
+    npx hearkn test     Send a test notification
+    npx hearkn status   Show current configuration
+    npx hearkn uninstall Remove hooks and config
+    npx hearkn help     Show this message
 `);
 }
 

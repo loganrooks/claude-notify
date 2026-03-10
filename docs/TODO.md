@@ -2,7 +2,7 @@
 
 ## Before v0.2.0
 
-- [ ] Test `npx harkn` install flow end-to-end on a clean machine
+- [ ] Test `npx hearkn` install flow end-to-end on a clean machine
 - [ ] Uninstaller: verify it cleanly removes hooks without breaking other hooks
 
 ## Design decisions needed
@@ -19,7 +19,7 @@
 - [ ] Notification sound/vibration config via ntfy priority levels
 - [ ] Other notification backends (Pushover, Slack webhook, desktop-notify)
 - [ ] Detect Cursor vs VS Code automatically from TERM_PROGRAM / env vars
-- [ ] `npx harkn update` — update hook without re-running full installer
+- [ ] `npx hearkn update` — update hook without re-running full installer
 - [ ] `install.sh` curl-based alternative installer for non-npm users
 
 ## Done

@@ -1,9 +1,9 @@
 {
-  "name": "harkn",
+  "name": "hearkn",
   "version": "0.1.0",
   "description": "Push notifications for AI coding agents — know when your agent needs you",
   "bin": {
-    "harkn": "bin/cli.js"
+    "hearkn": "bin/cli.js"
   },
   "keywords": [
     "claude",
@@ -21,7 +21,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/loganrooks/harkn"
+    "url": "https://github.com/loganrooks/hearkn"
   },
   "scripts": {
     "test": "node --test test/claude-notify.unit.test.js",
