@@ -20,6 +20,12 @@
     "type": "git",
     "url": "https://github.com/rookslog/claude-notify"
   },
+  "scripts": {
+    "test": "node --test test/claude-notify.unit.test.js",
+    "test:integration": "node --test test/claude-notify.integration.test.js",
+    "test:e2e": "node --test test/claude-notify.e2e.test.js",
+    "test:all": "node --test test/"
+  },
   "engines": {
     "node": ">=18"
   },
